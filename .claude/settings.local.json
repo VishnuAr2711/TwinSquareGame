@@ -20,7 +20,19 @@
       "Bash(npx --yes wrangler@latest pages project create twin-squares --production-branch main)",
       "Bash(npx --yes wrangler@latest pages deploy ./public --project-name twin-squares --branch main --commit-dirty=true)",
       "Bash(curl -s -o /dev/null -w \"HTTP %{http_code}  size=%{size_download} type=%{content_type}\\\\n\" https://twin-squares.pages.dev)",
-      "Bash(curl -s https://twin-squares.pages.dev)"
+      "Bash(curl -s https://twin-squares.pages.dev)",
+      "Bash(git ls-remote *)",
+      "Bash(echo \"EXIT: $?\")",
+      "Bash(gh auth *)",
+      "Bash(git config *)",
+      "Bash(security find-internet-password *)",
+      "Bash(curl -s -o /dev/null -w \"owner VishnuAr2711: %{http_code}\\\\n\" https://api.github.com/users/VishnuAr2711)",
+      "Bash(curl -s -o /dev/null -w \"repo TwinSquareGame: %{http_code}\\\\n\" https://api.github.com/repos/VishnuAr2711/TwinSquareGame)",
+      "Bash(curl -s https://api.github.com/user/86032507)",
+      "Bash(curl -s -o /dev/null -w \"Prathiv02/TwinSquareGame: %{http_code}\\\\n\" https://api.github.com/repos/Prathiv02/TwinSquareGame)",
+      "Bash(curl -s \"https://api.github.com/users/Prathiv02/repos?per_page=100\")",
+      "Read(//Users/prathivarul/.config/**)",
+      "Read(//Users/prathivarul/**)"
     ]
   }
 }
